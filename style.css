@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  /* do this to use default font so tuff ik */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #334155;
+  background-color: #ffffff;
+}
+
+
+section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.25rem;
+}
+
+#schedule, #registration {
+  background-color: #dcedff; /* oh my goodness every other section blue so tuff */
+  max-width: 100%; 
+}
+
+#schedule table, #registration h3, #registration ul {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  position: sticky;
+  top: 4rem; /* stucky tuff */
+  z-index: 999;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.75rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #64748b; /* gray is tuff */
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li ul {
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+  list-style-type: circle; /* all lists are circle instead of goofily shifting */
+}
+
+
+header:not(#top) {
+  position: sticky;
+  top: 0;               /* Lock it to the absolute top of the screen */
+  height: 4rem;         /* Give it an explicit, fixed height */
+  z-index: 1000;        /* Keep it on the topmost layer */
+  background-color: #ffffff;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav li {
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #1e3a8a; /* change color darker when hover */
+}
+
+#top {
+  text-align: center;
+  padding: 6rem 1.25rem;
+  background: #dbeafe;
+}
+
+#top h1 {
+  font-size: 2.75rem;
+  color: #1e3a8a;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+button, .register-btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.375rem; /* rouind corner */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover, .register-btn:hover {
+  background-color: #1d4ed8; /* dark when hover */
+}
+
+button:active, .register-btn:active {
+  transform: scale(0.98); /* im proud of this one it goes small and cool since press */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* this is cool too its shadow */
+}
+
+th {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+
+#registration {
+  text-align: center;
+}
+
+#registration h3:last-of-type {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #64748b;
+  margin-top: 2.5rem;
+}
+
+ /* makes the email tuff */
+#registration a[href^="mailto:"] {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#registration a[href^="mailto:"]:hover { 
+  text-decoration: underline;
+}
