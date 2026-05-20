@@ -90,9 +90,9 @@ li ul {
 
 header:not(#top) {
   position: sticky;
-  top: 0;               /* Lock it to the absolute top of the screen */
-  height: 4rem;         /* Give it an explicit, fixed height */
-  z-index: 1000;        /* Keep it on the topmost layer */
+  top: 0; /* lock to screen top */
+  height: 4rem;
+  z-index: 1000;
   background-color: #ffffff;
   
   display: flex;
@@ -223,4 +223,26 @@ td {
 
 #registration a[href^="mailto:"]:hover { 
   text-decoration: underline;
+}
+
+
+/* deal with goobers on phones */
+@media screen and (max-width: 768px) {
+  
+  nav ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0; 
+  }
+
+  html {
+    scroll-padding-top: 12rem; 
+  }
+
+  #top h1 {
+    font-size: 2rem;
+  }
 }
